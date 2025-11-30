@@ -11,7 +11,7 @@ import { generateRecommendedProducts } from "@/utils/generateRecommendedProducts
 import { useEffect, type FC } from "react";
 import { useTranslation } from "react-i18next";
 import { useParams } from "react-router";
-import products from "../../api/products.json";
+import products from "../../../public/api/products.json";
 import { CapacityPicker } from "./components/CapacityPicker";
 import { ColorPicker } from "./components/ColorPicker";
 import { PhotosSlider } from "./components/PhotosSlider";

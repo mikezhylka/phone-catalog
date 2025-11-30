@@ -2,7 +2,7 @@ import { endpoints } from "@/constants/endpoints";
 import type { Product } from "@/types/Product";
 import { useEffect, useState, type FC } from "react";
 import { useTranslation } from "react-i18next";
-import products from "../../api/products.json";
+import products from "../../../public/api/products.json";
 import { PaginationButton } from "../PaginationButton";
 import { ProductCard } from "../ProductCard";
 

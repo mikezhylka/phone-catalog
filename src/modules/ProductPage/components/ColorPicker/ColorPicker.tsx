@@ -2,7 +2,7 @@ import { bgColorMap } from "@/constants/productColors";
 import clsx from "clsx";
 import { type FC } from "react";
 import { useNavigate } from "react-router";
-import products from "../../../../api/products.json";
+import products from "../../../../../public/api/products.json";
 
 interface Props {
   colors: string[];

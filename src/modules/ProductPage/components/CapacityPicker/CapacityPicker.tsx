@@ -3,7 +3,7 @@ import { buildProductId } from "@/utils/buildProductId";
 import clsx from "clsx";
 import { type FC } from "react";
 import { useNavigate } from "react-router";
-import products from "../../../../api/products.json";
+import products from "../../../../../public/api/products.json";
 
 interface Props {
   currentProduct: FullProduct;

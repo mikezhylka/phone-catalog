@@ -1,5 +1,5 @@
 import type { FullProduct } from "@/types/FullProduct";
-import products from "../api/products.json";
+import products from "../../public/api/products.json";
 
 export const generateRecommendedProducts = (currentProduct: FullProduct) => {
   return products
