@@ -1,10 +1,12 @@
 import axios from "axios";
 import type { Category } from "../types/Category";
 
+const BASE_URL = import.meta.env.BASE_URL;
+
 const [phones, tablets, accessories] = await Promise.all([
-  axios.get("/api/phones.json").then((res) => res.data),
-  axios.get("/api/tablets.json").then((res) => res.data),
-  axios.get("/api/accessories.json").then((res) => res.data),
+  axios.get(`${BASE_URL}api/phones.json`).then((res) => res.data),
+  axios.get(`${BASE_URL}api/tablets.json`).then((res) => res.data),
+  axios.get(`${BASE_URL}api/accessories.json`).then((res) => res.data),
 ]);
 
 export const shoppingCategories: Category[] = [
