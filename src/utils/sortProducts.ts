@@ -1,4 +1,4 @@
-import products from "../../public/api/products.json";
+import products from "../api/products.json";
 
 export const sortProducts = (sortBy: "year" | "prices") => {
   return [...products].sort((p1, p2) => {
