@@ -1,0 +1,93 @@
+{
+  "welcome": "Witamy w Katalogu Telefonów",
+  "header.links": {
+    "home": "Strona główna",
+    "phones": "Telefony",
+    "tablets": "Tablety",
+    "accessories": "Akcesoria"
+  },
+
+  "footer.links": {
+    "github": "github",
+    "contacts": "kontakty",
+    "rights": "prawa"
+  },
+
+  "footer.back.to.top": "Powrót na górę",
+
+  "shop.byCategory": "Kup według kategorii",
+
+  "shopping.categories": {
+    "mobile.phones": "Telefony komórkowe",
+    "tablets": "Tablety",
+    "accessories": "Akcesoria"
+  },
+
+  "shopping.categories.models": "modele",
+
+  "products": {
+    "slider": {
+      "brand.new.models": "Nowe modele",
+      "hot.prices": "Gorące ceny",
+      "you.may.also.like": "Może ci się spodobać"
+    },
+    "filters": {
+      "options": {
+        "newest": "Najnowsze",
+        "alphabetically": "Alfabetycznie",
+        "cheapest": "Najtańsze",
+        "16": "16",
+        "32": "32",
+        "64": "64"
+      },
+      "titles": {
+        "sort": { "by": "Sortuj według" },
+        "items": { "on": { "page": "Elementy na stronie" } }
+      }
+    }
+  },
+
+  "catalog": {
+    "titles": {
+      "mobile.phones": "Telefony komórkowe",
+      "tablets": "Tablety",
+      "accessories": "Akcesoria"
+    }
+  },
+
+  "available.colors": "Dostępne kolory",
+  "select.capacity": "Wybierz pojemność",
+  "about": "O produkcie",
+  "tech.specs": "Specyfikacja techniczna",
+  "back": "Wstecz",
+  "added": "Dodano",
+  "add.to.cart": "Dodaj do koszyka",
+
+  "processor": "Procesor",
+  "screen": "Ekran",
+  "resolution": "Rozdzielczość",
+  "RAM": "RAM",
+  "built.in.memory": "Wbudowana pamięć",
+  "cell": "Sieć komórkowa",
+  "capacity": "Pojemność",
+
+  "no.products.title": "Nie dodano żadnych produktów do {{where}}",
+  "no.products.button.text": "Przeglądaj naszą stronę",
+
+  "item": "produkt",
+  "items": "produkty",
+  "models": "modele",
+  "total": "Suma",
+
+  "yes": "Tak",
+  "no": "Nie",
+  "checkout.not.implemented": "Finalizacja zamówienia nie jest jeszcze dostępna. Czy chcesz wyczyścić koszyk?",
+
+  "favorites.title": "Ulubione",
+  "description": "Przeglądaj i znajdź idealny telefon dla siebie.",
+  "search_placeholder": "Szukaj telefonów...",
+  "add_to_cart": "Dodaj do koszyka",
+  "view_details": "Zobacz szczegóły",
+  "cart": "Koszyk",
+  "checkout": "Zamówienie"
+}

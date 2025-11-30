@@ -1,0 +1,89 @@
+{
+  "welcome": "Willkommen im Phone Catalog",
+  "header.links": {
+    "home": "Startseite",
+    "phones": "Handys",
+    "tablets": "Tablets",
+    "accessories": "Zubehör"
+  },
+
+  "footer.links": {
+    "github": "github",
+    "contacts": "Kontakte",
+    "rights": "Rechte"
+  },
+
+  "footer.back.to.top": "Zurück nach oben",
+
+  "shopping.categories": {
+    "mobile.phones": "Handys",
+    "tablets": "Tablets",
+    "accessories": "Zubehör"
+  },
+
+  "shopping.categories.models": "Modelle",
+
+  "shop.byCategory": "Nach Kategorie einkaufen",
+
+  "favorites.title": "Favoriten",
+
+  "catalog": {
+    "titles": {
+      "mobile.phones": "Handys",
+      "tablets": "Tablets",
+      "accessories": "Zubehör"
+    }
+  },
+
+  "available.colors": "Verfügbare Farben",
+  "select.capacity": "Kapazität auswählen",
+  "about": "Über",
+  "tech.specs": "Technische Daten",
+  "back": "Zurück",
+  "added": "Hinzugefügt",
+  "add.to.cart": "In den Warenkorb",
+
+  "products": {
+    "slider": {
+      "brand.new.models": "Brandneue Modelle",
+      "hot.prices": "Heiß begehrte Preise",
+      "you.may.also.like": "Das könnte Ihnen auch gefallen"
+    },
+    "filters": {
+      "options": {
+        "newest": "Neueste",
+        "alphabetically": "Alphabetisch",
+        "cheapest": "Günstigste",
+        "16": "16",
+        "32": "32",
+        "64": "64"
+      },
+      "titles": {
+        "sort": { "by": "Sortieren nach" },
+        "items": { "on": { "page": "Artikel pro Seite" } }
+      }
+    }
+  },
+
+  "screen": "Bildschirm",
+  "resolution": "Auflösung",
+  "processor": "Prozessor",
+  "RAM": "RAM",
+  "built.in.memory": "Eingebauter Speicher",
+  "cell": "Zelle",
+  "capacity": "Kapazität",
+
+  "no.products.title": "Keine Produkte hinzugefügt",
+  "no.products.button.text": "Unser Website explorieren",
+  "total": "Gesamt",
+
+  "item": "Artikel",
+  "items": "Artikel",
+  "models": "Modelle",
+  "cart": "Warenkorb",
+
+  "checkout.not.implemented": "Der Checkout ist noch nicht implementiert. Möchten Sie den Warenkorb leeren?",
+  "yes": "Ja",
+  "no": "Nein",
+  "checkout": "Zur Kasse"
+}

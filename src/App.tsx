@@ -1,15 +1,32 @@
-function App() {
-  return (
-    <div className="p-6 max-w-xl mx-auto bg-gray-100 rounded-lg shadow-md">
-      <h1 className="font-t text-4xl text-blue-600 mb-4">Product Catalog</h1>
-      <p className="text-gray-700 mb-6">
-        Explore our amazing selection of products.
-      </p>
-      <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-        Shop Now
-      </button>
-    </div>
-  );
-}
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { Footer } from "./components/Footer";
+import { Header } from "./components/Header";
+import { AccessoriesPage } from "./modules/AccessoriesPage";
+import { CartPage } from "./modules/CartPage";
+import { FavoritesPage } from "./modules/FavoritesPage";
+import { HomePage } from "./modules/HomePage";
+import { NotFoundPage } from "./modules/NotFoundPage";
+import { PhonesPage } from "./modules/PhonesPage";
+import { ProductPage } from "./modules/ProductPage/ProductPage";
+import { TabletsPage } from "./modules/TabletsPage";
 
-export default App;
+export const App = () => {
+  return (
+    <Router>
+      <Header />
+      <main>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/favorites" element={<FavoritesPage />} />
+          <Route path="/cart" element={<CartPage />} />
+          <Route path="/product/:id" element={<ProductPage />} />
+          <Route path="/phones" element={<PhonesPage />} />
+          <Route path="/tablets" element={<TabletsPage />} />
+          <Route path="/accessories" element={<AccessoriesPage />} />
+          <Route path="*" element={<NotFoundPage />} />
+        </Routes>
+      </main>
+      <Footer />
+    </Router>
+  );
+};

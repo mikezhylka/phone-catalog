@@ -1,0 +1,93 @@
+{
+  "welcome": "Welcome to the Phone Catalog",
+  "header.links": {
+    "home": "Home",
+    "phones": "Phones",
+    "tablets": "Tablets",
+    "accessories": "Accessories"
+  },
+
+  "footer.links": {
+    "github": "github",
+    "contacts": "contacts",
+    "rights": "rights"
+  },
+
+  "footer.back.to.top": "Back to top",
+
+  "shop.byCategory": "Shop by category",
+
+  "shopping.categories": {
+    "mobile.phones": "Mobile Phones",
+    "tablets": "Tablets",
+    "accessories": "Accessories"
+  },
+
+  "shopping.categories.models": "models",
+
+  "products": {
+    "slider": {
+      "brand.new.models": "Brand new models",
+      "hot.prices": "Hot prices",
+      "you.may.also.like": "You may also like"
+    },
+    "filters": {
+      "options": {
+        "newest": "Newest",
+        "alphabetically": "Alphabetically",
+        "cheapest": "Cheapest",
+        "16": "16",
+        "32": "32",
+        "64": "64"
+      },
+      "titles": {
+        "sort": { "by": "Sort by" },
+        "items": { "on": { "page": "Items on page" } }
+      }
+    }
+  },
+
+  "catalog": {
+    "titles": {
+      "mobile.phones": "Mobile phones",
+      "tablets": "Tablets",
+      "accessories": "Accessories"
+    }
+  },
+
+  "available.colors": "Available colors",
+  "select.capacity": "Select capacity",
+  "about": "About",
+  "tech.specs": "Tech specs",
+  "back": "Back",
+  "added": "Added",
+  "add.to.cart": "Add to Cart",
+
+  "processor": "Processor",
+  "screen": "Screen",
+  "resolution": "Resolution",
+  "RAM": "RAM",
+  "built.in.memory": "Built in memory",
+  "cell": "Cell",
+  "capacity": "Capacity",
+
+  "no.products.title": "No products added to {{where}}",
+  "no.products.button.text": "Explore our website",
+
+  "item": "item",
+  "items": "items",
+  "models": "models",
+  "total": "Total",
+
+  "yes": "Yes",
+  "no": "No",
+  "checkout.not.implemented": "Checkout is not implemented yet. Do you want to clear the Cart?",
+
+  "favorites.title": "Favorites",
+  "description": "Browse and find the perfect phone for you.",
+  "search_placeholder": "Search for phones...",
+  "add_to_cart": "Add to Cart",
+  "view_details": "View Details",
+  "cart": "Shopping Cart",
+  "checkout": "Checkout"
+}

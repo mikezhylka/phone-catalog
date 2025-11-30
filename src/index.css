@@ -1,1 +1,89 @@
 @import "tailwindcss";
+@import "./fonts.css";
+
+html {
+  min-height: 100vh;
+}
+
+@theme {
+  --color-primary: #313237;
+  --color-secondary: #89939a;
+  --color-icons: #b4bdc3;
+  --color-elements: #e2e6e9;
+  --color-hover-bg: #fafbfc;
+  --color-green: #27ae60;
+  --color-red: #eb5757;
+
+  --color-spacegray: #4b4b4b;
+  --color-silver: #c0c0c0;
+  --color-gold: #ffd700;
+  --color-blue: #007aff;
+  --color-black: #000000;
+  --color-yellow: #ffcc00;
+  --color-white: #ffffff;
+  --color-purple: #5856d6;
+  --color-midnightgreen: #004953;
+  --color-rosegold: #b76e79;
+  --color-coral: #ff7f50;
+  --color-midnight: #191970;
+  --color-spaceblack: #1c1c1e;
+  --color-pink: #ff2d55;
+  --color-graphite: #2c2c2e;
+  --color-sierrablue: #5ac8fa;
+  --color-rose-gold: #b76e79;
+  --color-sky-blue: #87ceeb;
+  --color-starlight: #f5f5dc;
+
+  --breakpoint-sm: 320px;
+  --breakpoint-md: 640px;
+  --breakpoint-lg: 1200px;
+  --breakpoint-xl: 1201px;
+
+  --font-bold: "Mont_Bold", "sans-serif";
+  --font-semibold: "Mont_SemiBold", "sans-serif";
+  --font-regular: "Mont_Regular", "sans-serif";
+}
+
+@layer components {
+  .heading-h1 {
+    @apply text-[32px] leading-[41px] tracking-[-0.32px] font-bold md:text-[48px] md:leading-[56px];
+  }
+
+  .heading-h2 {
+    @apply text-[22px] leading-[41px] tracking-[-0.32px] font-bold md:text-[32px];
+  }
+
+  .heading-h3 {
+    @apply text-[20px] leading-[26px] font-semibold md:text-[22px] md:leading-[31px];
+  }
+
+  .heading-h4 {
+    @apply text-[16px] leading-[20px] font-semibold md:text-[20px] md:leading-[26px];
+  }
+
+  .text-uppercase {
+    @apply text-[12px] leading-[11px] tracking-[0.48px] font-bold uppercase;
+  }
+
+  .text-button {
+    @apply text-[14px] leading-[21px] font-semibold;
+  }
+
+  .text-body {
+    @apply text-[14px] leading-[21px] font-regular;
+  }
+
+  .text-small {
+    @apply text-[12px] leading-[15px] font-semibold;
+  }
+
+  .text-ultra-small {
+    @apply text-[9px] leading-0 font-bold;
+  }
+}
+
+@layer utilities {
+  .shadow-inset-light {
+    box-shadow: inset 0 1px #E2E6E9;
+  }
+}
