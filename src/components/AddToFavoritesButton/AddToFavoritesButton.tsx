@@ -16,9 +16,7 @@ export const AddToFavoritesButton: FC<Props> = ({ product, isInFavorites }) => {
   return (
     <button
       className={clsx(
-        isInFavorites
-          ? "bg-[url(/img/icons/favorites-filled.svg)]"
-          : "bg-[url(/img/icons/favorites.svg)]",
+        isInFavorites ? "bg-favorites-active-icon" : "bg-favorites-icon",
         "w-10 h-10 border-1 border-icons shrink-0 bg-center bg-no-repeat hover:cursor-pointer hover:border-primary"
       )}
       title="Add to favorites"

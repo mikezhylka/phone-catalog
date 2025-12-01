@@ -86,4 +86,12 @@ html {
   .shadow-inset-light {
     box-shadow: inset 0 1px #E2E6E9;
   }
+
+  .bg-favorites-icon {
+    background-image: url("./assets/img/icons/favorites.svg");
+  }
+
+  .bg-favorites-active-icon {
+    background-image: url("./assets/img/icons/favorites-filled.svg");
+  }
 }
