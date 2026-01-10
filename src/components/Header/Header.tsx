@@ -20,7 +20,7 @@ export const Header: FC = () => {
       <header className="sticky top-0 z-2 bg-white w-full h-12 lg:h-16 flex items-center justify-between shadow-[0_1px_#E2E6E9]">
         <Link
           to="/"
-          className="w-16 lg:w-20 mx-4 lg:mx-6 h-full bg-[url('/public/img/icons/nice-gadgets.svg')] bg-center bg-no-repeat shrink-0"
+          className="w-16 lg:w-20 mx-4 lg:mx-6 h-full bg-logo bg-center bg-no-repeat shrink-0"
         />
         <button
           className={clsx(
