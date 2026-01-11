@@ -12,7 +12,6 @@ export const PhotosSlider: FC<Props> = ({ images }) => {
   const [currentSlide, setCurrentSlide] = useState(1);
   const currentPicture = images[currentSlide - 1];
 
-  const normalizeImgPath = (path: string) => `/${path}`;
   const handleImgClick = (slide: number) => setCurrentSlide(slide + 1);
 
   const handleMouseEnter = (event: TouchEvent) => {
@@ -50,7 +49,7 @@ export const PhotosSlider: FC<Props> = ({ images }) => {
             key={picture}
           >
             <img
-              src={normalizeImgPath(picture)}
+              src={picture}
               className="h-12 lg:h-20 aspect-square object-contain group-hover:scale-105 transition-transform duration-200"
               onClick={() => handleImgClick(index)}
             />
@@ -59,7 +58,7 @@ export const PhotosSlider: FC<Props> = ({ images }) => {
       </div>
       <img
         className="w-full aspect-square mb-5.5 object-contain max-w-80 md:max-w-full md:col-span-6 md:mb-0"
-        src={normalizeImgPath(currentPicture)}
+        src={currentPicture}
         alt="Product picture"
         onTouchStart={handleMouseEnter}
         onTouchMove={handleMouseMove}

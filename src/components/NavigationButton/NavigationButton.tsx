@@ -1,15 +1,15 @@
 import clsx from "clsx";
-import type { FC } from "react";
+import type { ElementType, FC } from "react";
 import { NavLink } from "react-router";
 
 interface Props {
+  Icon: ElementType;
   to: string;
   productsLen: number;
-  img?: string;
   cn?: string;
 }
 
-export const NavigationButton: FC<Props> = ({ img, to, productsLen, cn }) => {
+export const NavigationButton: FC<Props> = ({ Icon, to, productsLen, cn }) => {
   return (
     <NavLink
       className={({ isActive }) =>
@@ -22,10 +22,8 @@ export const NavigationButton: FC<Props> = ({ img, to, productsLen, cn }) => {
       to={to}
     >
       <div className="w-full h-full flex items-center justify-center">
-        <div
-          style={{ backgroundImage: `url(${img})`, backgroundSize: "contain" }}
-          className={`relative w-4 h-4 bg-center bg-no-repeat`}
-        >
+        <div className="relative w-4 h-4 bg-center bg-no-repeat">
+          <Icon />
           {productsLen > 0 && (
             <span className="absolute flex items-center justify-center w-3.5 h-3.5 rounded-full text-ultra-small text-white right-[-6px] top-[-6px] bg-red">
               {productsLen}

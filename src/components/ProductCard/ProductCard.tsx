@@ -34,7 +34,7 @@ export const ProductCard: FC<Props> = ({ product }) => {
     >
       <img
         className="w-full aspect-square object-contain group-hover:scale-102 group-hover:transition-transform duration-200"
-        src={`/${image}`}
+        src={image}
         alt={name}
       />
       <p className="text-body text-primary">{name}</p>

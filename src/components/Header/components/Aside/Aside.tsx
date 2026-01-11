@@ -1,7 +1,10 @@
+import { NavigationButton } from "@/components/NavigationButton";
+import { navigationLinks } from "@/constants/navigationLinks";
 import { useEffect, type Dispatch, type FC, type SetStateAction } from "react";
 import { NavLink } from "react-router";
-import { navigationLinks } from "@/constants/navigationLinks";
-import { NavigationButton } from "@/components/NavigationButton";
+
+import CartIcon from "@/assets/img/icons/cart.svg?react";
+import FavoritesIcon from "@/assets/img/icons/favorites.svg?react";
 
 interface Props {
   favProductsLen: number;
@@ -43,13 +46,13 @@ export const Aside: FC<Props> = ({
       <div className="flex absolute bottom-0 w-full">
         <NavigationButton
           cn="flex-1 border-t-1 border-t-elements"
-          img="/img/icons/favorites.svg"
+          Icon={FavoritesIcon}
           to="/favorites"
           productsLen={favProductsLen}
         />
         <NavigationButton
           cn="flex-1 border-t-1 border-t-elements"
-          img="/img/icons/cart.svg"
+          Icon={CartIcon}
           to="/cart"
           productsLen={cartProductsLen}
         />

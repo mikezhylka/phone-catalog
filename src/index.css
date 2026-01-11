@@ -42,11 +42,20 @@ html {
   --font-bold: "Mont_Bold", "sans-serif";
   --font-semibold: "Mont_SemiBold", "sans-serif";
   --font-regular: "Mont_Regular", "sans-serif";
-  
+
   /* prefix --background-image automatically creates class bg-* */
-  --background-image-favorites: url("./assets/img/icons/favorites.svg");
-  --background-image-favorites-active: url("./assets/img/icons/favorites-filled.svg");
+  --background-image-favorites-icon: url("./assets/img/icons/favorites.svg");
+  --background-image-favorites-active-icon: url("./assets/img/icons/favorites-filled.svg");
   --background-image-logo: url("./assets/img/icons/nice-gadgets.svg");
+  --background-image-close-icon: url("./assets/img/icons/close.svg");
+  --background-image-menu-icon: url("./assets/img/icons/menu.svg");
+  --background-image-arrow-up-icon: url("./assets/img/icons/arrow-up.svg");
+  --background-image-home-icon: url("./assets/img/icons/home.svg");
+
+  --background-image-arrow-left-disabled-icon: url("./assets/img/icons/arrow-left-disabled.svg");
+  --background-image-arrow-right-disabled-icon: url("./assets/img/icons/arrow-right-disabled.svg");
+  --background-image-arrow-left-icon: url("./assets/img/icons/arrow-left.svg");
+  --background-image-arrow-right-icon: url("./assets/img/icons/arrow-right.svg");
 }
 
 @layer components {
@@ -89,7 +98,6 @@ html {
 
 @layer utilities {
   .shadow-inset-light {
-    box-shadow: inset 0 1px #E2E6E9;
+    box-shadow: inset 0 1px #e2e6e9;
   }
 }
-

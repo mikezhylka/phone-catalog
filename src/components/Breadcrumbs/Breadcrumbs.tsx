@@ -1,3 +1,4 @@
+import ArrowRightDisabled from "@/assets/img/icons/arrow-right-disabled.svg?react";
 import clsx from "clsx";
 import type { FC } from "react";
 import { Link, useLocation } from "react-router-dom";
@@ -15,7 +16,7 @@ export const Breadcrumbs: FC<Props> = ({ productName, productCategory }) => {
     <nav className="flex items-center gap-2 text-body text-secondary my-6 md:mb-10">
       <Link
         to="/"
-        className="w-4 h-4 bg-[url('/img/icons/home.svg')] bg-no-repeat bg-center hover:scale-110 transition-transform"
+        className="w-4 h-4 bg-home-icon bg-no-repeat bg-center hover:scale-110 transition-transform"
       />
       {pathParts.map((part, index) => {
         const isLast = part === pathParts[pathParts.length - 1];
@@ -28,7 +29,7 @@ export const Breadcrumbs: FC<Props> = ({ productName, productCategory }) => {
 
         return (
           <span key={part} className="flex items-center gap-2">
-            <img src="/img/icons/arrow-right-disabled.svg" />
+            <ArrowRightDisabled />
             <Link
               to={path === "/product" ? `/${productCategory}` : path}
               className={clsx(

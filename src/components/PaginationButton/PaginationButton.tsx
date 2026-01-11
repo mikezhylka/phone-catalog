@@ -10,11 +10,11 @@ interface Props {
 export const PaginationButton: FC<Props> = ({ type, isDisabled, onClick }) => {
   const backgroundImage = isDisabled
     ? type === "prev"
-      ? "bg-[url('/img/icons/arrow-left-disabled.svg')]"
-      : "bg-[url('/img/icons/arrow-right-disabled.svg')]"
+      ? "bg-arrow-left-disabled-icon"
+      : "bg-arrow-right-disabled-icon"
     : type === "prev"
-    ? "bg-[url('/img/icons/arrow-left.svg')]"
-    : "bg-[url('/img/icons/arrow-right.svg')]";
+    ? "bg-arrow-left-icon"
+    : "bg-arrow-right-icon";
 
   return (
     <button

@@ -1,3 +1,4 @@
+import ArrowDownIcon from "@/assets/img/icons/arrow-down.svg?react";
 import { languages } from "@/constants/languages";
 import { useClickOutside } from "@/hooks/useClickOutside";
 import clsx from "clsx";
@@ -34,9 +35,7 @@ export const LangDropdown: FC = () => {
         className="w-full min-w-20 h-full flex justify-between items-center px-3 border-l border-elements text-button hover:bg-hover-bg hover:cursor-pointer rounded-none"
       >
         <span>{currentLangDecode.toUpperCase()}</span>
-        <img
-          src="/img/icons/arrow-down.svg"
-          alt=""
+        <ArrowDownIcon
           className={clsx(
             "w-4 h-4 transition-transform duration-200",
             isLangDropdownOpened && "rotate-180"

@@ -1,3 +1,4 @@
+import ArrowDownIcon from "@/assets/img/icons/arrow-down.svg?react";
 import { sortOptions } from "@/constants/sortOptions";
 import { useClickOutside } from "@/hooks/useClickOutside";
 import type { SortOption } from "@/types/SortOption";
@@ -73,14 +74,14 @@ export const Dropdown: FC<Props> = ({ title, sort }) => {
           <span>
             {t(`products.filters.options.${selected.title.toLowerCase()}`)}
           </span>
-          <img
-            src="/img/icons/arrow-down.svg"
-            alt=""
+          <div
             className={clsx(
               "w-4 h-4 transition-transform duration-200",
               isOpened && "rotate-180"
             )}
-          />
+          >
+            <ArrowDownIcon />
+          </div>
         </button>
 
         {isOpened && (

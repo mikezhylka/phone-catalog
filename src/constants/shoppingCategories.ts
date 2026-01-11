@@ -1,6 +1,10 @@
 import axios from "axios";
 import type { Category } from "../types/Category";
 
+import bannerAccessories from "@/assets/img/banner-bg-accessories.jpg";
+import bannerPhones from "@/assets/img/banner-bg-phones.jpg";
+import bannerTablets from "@/assets/img/banner-bg-tablets.jpg";
+
 const BASE_URL = import.meta.env.BASE_URL;
 
 const [phones, tablets, accessories] = await Promise.all([
@@ -12,21 +16,21 @@ const [phones, tablets, accessories] = await Promise.all([
 export const shoppingCategories: Category[] = [
   {
     title: "mobile.phones",
-    banner: "/img/banner-bg-phones.jpg",
+    banner: bannerPhones,
     to: "/phones",
     productsLen: phones.length,
   },
 
   {
     title: "tablets",
-    banner: "/img/banner-bg-tablets.jpg",
+    banner: bannerTablets,
     to: "/tablets",
     productsLen: tablets.length,
   },
 
   {
     title: "accessories",
-    banner: "/img/banner-bg-accessories.jpg",
+    banner: bannerAccessories,
     to: "/accessories",
     productsLen: accessories.length,
   },

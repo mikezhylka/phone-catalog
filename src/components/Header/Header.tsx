@@ -7,6 +7,9 @@ import { Aside } from "./components/Aside";
 import { HeaderNav } from "./components/HeaderNav";
 import { LangDropdown } from "./components/LangDropdown/LangDropdown";
 
+import CartIcon from "@/assets/img/icons/cart.svg?react";
+import FavoritesIcon from "@/assets/img/icons/favorites.svg?react";
+
 export const Header: FC = () => {
   const { cartProducts } = useAppSelector((state) => state.cart);
   const { favProducts } = useAppSelector((state) => state.favorites);
@@ -25,9 +28,7 @@ export const Header: FC = () => {
         <button
           className={clsx(
             "md:hidden w-12 h-12 flex justify-center items-center shadow-light-shadow-leftbg-center bg-center bg-no-repeat",
-            isMenuOpened
-              ? `bg-[url('/public/img/icons/close.svg')]`
-              : `bg-[url('/public/img/icons/menu.svg')]`
+            isMenuOpened ? "bg-close-icon" : "bg-menu-icon"
           )}
           onClick={() => setIsMenuOpened((prev) => !prev)}
         />
@@ -36,12 +37,12 @@ export const Header: FC = () => {
           <div className="h-full flex">
             <LangDropdown />
             <NavigationButton
-              img="/img/icons/favorites.svg"
+              Icon={FavoritesIcon}
               to="/favorites"
               productsLen={favProductsLen}
             />
             <NavigationButton
-              img="/img/icons/cart.svg"
+              Icon={CartIcon}
               to="/cart"
               productsLen={cartProductsLen}
             />
